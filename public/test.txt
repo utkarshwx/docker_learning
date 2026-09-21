@@ -1,0 +1,31 @@
+import great_expectations.expectations as gxe
+
+# Convert our rule definitions into GX expectations
+
+EXPECTATION_MAP = {
+    "expect_table_row_count_to_be_between":
+        gxe.ExpectTableRowCountToBeBetween,
+
+    "expect_column_values_to_not_be_null":
+        gxe.ExpectColumnValuesToNotBeNull,
+
+    "expect_column_values_to_be_between":
+        gxe.ExpectColumnValuesToBeBetween,
+}
+
+for rule in ALL_RULES:
+    expectation_type = rule["expectation_type"]
+    expectation_class = EXPECTATION_MAP[expectation_type]
+
+    expectation = expectation_class(
+        **rule["parameters"],
+        meta={
+            "name": rule["name"],
+            "dimension": rule["dimension"],
+            "severity": rule["severity"]
+        }
+    )
+
+    suite.add_expectation(expectation)
+
+print("GX expectations created:", len(suite.expectations))
