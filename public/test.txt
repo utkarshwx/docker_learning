@@ -82,3 +82,25 @@ batch = batch_definition.get_batch(
 )
 
 print("GX Batch created")
+
+
+asset_name = f"{DATASET}_{STAGE}"
+
+try:
+    data_asset = datasource.get_asset(asset_name)
+    print("Existing data asset retrieved")
+except Exception:
+    data_asset = datasource.add_dataframe_asset(
+        name=asset_name
+    )
+    print("New data asset created")
+
+batch_definition = data_asset.add_batch_definition_whole_dataframe(
+    name="current_batch"
+)
+
+batch = batch_definition.get_batch(
+    batch_parameters={"dataframe": df}
+)
+
+print("GX Batch created")
