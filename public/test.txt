@@ -1,4 +1,4 @@
-import great_expectations.expectations as gxe
+9import great_expectations.expectations as gxe
 
 # Convert our rule definitions into GX expectations
 
@@ -29,3 +29,13 @@ for rule in ALL_RULES:
     suite.add_expectation(expectation)
 
 print("GX expectations created:", len(suite.expectations))
+
+
+# Normalize the row-count rule for GX
+
+for rule in ALL_RULES:
+    if rule["expectation_type"] == "expect_table_row_count_to_be_between":
+        if "min_values" in rule["parameters"]:
+            rule["parameters"]["min_value"] = rule["parameters"].pop("min_values")
+
+print(ALL_RULES[0])
