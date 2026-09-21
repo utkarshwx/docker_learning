@@ -124,3 +124,16 @@ batch = batch_definition.get_batch(
 )
 
 print("GX Batch created")
+
+SUITE_NAME_GX = f"rules_{SUITE_NAME}"
+
+try:
+    suite = context.suites.get(name=SUITE_NAME_GX)
+    print("Existing suite retrieved:", SUITE_NAME_GX)
+except Exception:
+    suite = context.suites.add(
+        gx.ExpectationSuite(name=SUITE_NAME_GX)
+    )
+    print("New suite created:", SUITE_NAME_GX)
+
+print("Current expectations:", len(suite.expectations))
