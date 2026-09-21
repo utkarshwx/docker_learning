@@ -1,4 +1,4 @@
-9import great_expectations.expectations as gxe
+79import great_expectations.expectations as gxe
 
 # Convert our rule definitions into GX expectations
 
@@ -98,6 +98,26 @@ except Exception:
 batch_definition = data_asset.add_batch_definition_whole_dataframe(
     name="current_batch"
 )
+
+batch = batch_definition.get_batch(
+    batch_parameters={"dataframe": df}
+)
+
+print("GX Batch created")
+
+
+batch_definition_name = "current_batch"
+
+try:
+    batch_definition = data_asset.get_batch_definition(
+        batch_definition_name
+    )
+    print("Existing batch definition retrieved")
+except Exception:
+    batch_definition = data_asset.add_batch_definition_whole_dataframe(
+        name=batch_definition_name
+    )
+    print("New batch definition created")
 
 batch = batch_definition.get_batch(
     batch_parameters={"dataframe": df}
