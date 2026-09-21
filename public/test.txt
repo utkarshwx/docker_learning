@@ -39,3 +39,21 @@ for rule in ALL_RULES:
             rule["parameters"]["min_value"] = rule["parameters"].pop("min_values")
 
 print(ALL_RULES[0])
+
+
+# Identify which expectation causes the validation error
+
+for i, expectation in enumerate(suite.expectations, start=1):
+    try:
+        result = batch.validate(expectation)
+
+        print(
+            f"{i}. {expectation.expectation_type}: "
+            f"SUCCESS = {result['success']}"
+        )
+
+    except Exception as e:
+        print(
+            f"{i}. {expectation.expectation_type}: "
+            f"ERROR = {type(e).__name__}: {e}"
+        )
