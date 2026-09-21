@@ -57,3 +57,28 @@ for i, expectation in enumerate(suite.expectations, start=1):
             f"{i}. {expectation.expectation_type}: "
             f"ERROR = {type(e).__name__}: {e}"
         )
+
+# Create/retrieve GX pandas datasource
+
+try:
+    datasource = context.data_sources.get("dq_source")
+    print("Existing datasource retrieved")
+except Exception:
+    datasource = context.data_sources.add_pandas(
+        name="dq_source"
+    )
+    print("New datasource created")
+
+data_asset = datasource.add_dataframe_asset(
+    name=f"{DATASET}_{STAGE}"
+)
+
+batch_definition = data_asset.add_batch_definition_whole_dataframe(
+    name="current_batch"
+)
+
+batch = batch_definition.get_batch(
+    batch_parameters={"dataframe": df}
+)
+
+print("GX Batch created")
