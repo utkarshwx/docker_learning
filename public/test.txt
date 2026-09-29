@@ -1,2 +1,7 @@
 “I would compare the two projects using both Time-to-Market and Cost of Delay rather than looking at TTM alone. Project A has a shorter TTM of 2 months, but its COD is only €5,000 per month, and the risk of delay is relatively low. Project B has a longer TTM of 4 months, but its COD is €20,000 per month, with a higher risk of losing new business and competitors launching a similar feature first.
 So, although Project B takes longer to deliver, each month of delay has a much larger business impact. I would therefore prioritize Project B, while also looking at whether we can reduce its TTM by breaking the feature into smaller deliverable increments.”
+
+
+> “I’d also consider the project’s strategic value, customer impact, available resources, and key risks. I’d clearly communicate the €20,000 monthly Cost of Delay and the competitive risk to stakeholders, while explaining that incremental delivery can help manage the longer TTM. I’d also make sure the team has the capacity to deliver it without creating unnecessary risk.”
+
+“Since Project B has a longer TTM, I would break the work into smaller increments and deliver the highest-value parts first. This would reduce the time before customers see value while limiting the cost of delay. I’d also track progress closely and look for ways to shorten the four-month timeline without compromising quality.”
