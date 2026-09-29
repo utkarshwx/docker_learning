@@ -1,1 +1,2 @@
-
+“I would compare the two projects using both Time-to-Market and Cost of Delay rather than looking at TTM alone. Project A has a shorter TTM of 2 months, but its COD is only €5,000 per month, and the risk of delay is relatively low. Project B has a longer TTM of 4 months, but its COD is €20,000 per month, with a higher risk of losing new business and competitors launching a similar feature first.
+So, although Project B takes longer to deliver, each month of delay has a much larger business impact. I would therefore prioritize Project B, while also looking at whether we can reduce its TTM by breaking the feature into smaller deliverable increments.”
