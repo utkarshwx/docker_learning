@@ -37,3 +37,7 @@ Send this:
 > “For the pilot, I’d keep the setup to about one to two weeks, depending on the existing tooling and project complexity. We can start with one application and a limited pipeline covering build, automated tests, and deployment to a non-production environment.
 
 I’d set clear milestones for each stage and review progress regularly. The team would continue its normal work while we introduce the pipeline incrementally, so the pilot shouldn’t create a significant productivity drop. At the end of the pilot, we can compare the results against our baseline and decide whether the benefits justify expanding it.”
+
+Send this:
+
+> “Thank you. I’ll put together a concise pilot plan covering the scope, estimated costs, timeline, training requirements, risks, and success metrics. I’ll also include our current baseline so we can clearly compare the results. This should give us enough information to make a practical go/no-go decision without committing to a large investment upfront.”
