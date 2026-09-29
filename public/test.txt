@@ -8,3 +8,10 @@ So, although Project B takes longer to deliver, each month of delay has a much l
 
 
 “Thank you, Isabelle. I’ll make sure the recommendation is communicated clearly to the stakeholders, with the reasoning based on TTM, COD, customer impact, and risk. I’ll also track the delivery metrics so we can adjust the plan if the business conditions change.”
+
+
+Send this as your response:
+
+> “I’m proposing that we introduce a CI/CD pipeline to automate the build, testing, and deployment process. Instead of manually integrating and deploying code, every change would go through automated checks before it reaches production.
+
+The main reason to consider it now is that our current manual process is causing errors and delays. CI/CD would make deployments more consistent and predictable, reduce manual effort, and allow us to release changes faster. I’d also propose starting with a small pilot on one project, so we can measure the benefits and manage the cost and risk before expanding it to the wider team.”
