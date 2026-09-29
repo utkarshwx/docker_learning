@@ -15,3 +15,10 @@ Send this as your response:
 > “I’m proposing that we introduce a CI/CD pipeline to automate the build, testing, and deployment process. Instead of manually integrating and deploying code, every change would go through automated checks before it reaches production.
 
 The main reason to consider it now is that our current manual process is causing errors and delays. CI/CD would make deployments more consistent and predictable, reduce manual effort, and allow us to release changes faster. I’d also propose starting with a small pilot on one project, so we can measure the benefits and manage the cost and risk before expanding it to the wider team.”
+
+
+You can answer:
+
+> “I’d keep the initial investment small by starting with a limited pilot rather than changing the whole process at once. The main costs would be CI/CD tooling, initial pipeline setup, and some team training. We can reduce disruption by implementing it alongside the existing process and moving one project at a time.
+
+To measure success, I’d compare the pilot against our current baseline using deployment frequency, deployment time, failed deployments, rollback rate, and manual effort. If we see fewer errors, faster and more predictable deployments, and reduced manual effort without affecting delivery timelines, that gives us a measurable ROI. We can then use those results to decide whether expanding CI/CD is justified.”
