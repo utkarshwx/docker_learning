@@ -1,4 +1,4 @@
-“I would compare the two projects using both Time-to-Market and Cost of Delay rather than looking at TTM alone. Project A has a shorter TTM of 2 months, but its COD is only €5,000 per month, and the risk of delay is relatively low. Project B has a longer TTM of 4 months, but its COD is €20,000 per month, with a higher risk of losing new business and competitors launching a similar feature first.
+9“I would compare the two projects using both Time-to-Market and Cost of Delay rather than looking at TTM alone. Project A has a shorter TTM of 2 months, but its COD is only €5,000 per month, and the risk of delay is relatively low. Project B has a longer TTM of 4 months, but its COD is €20,000 per month, with a higher risk of losing new business and competitors launching a similar feature first.
 So, although Project B takes longer to deliver, each month of delay has a much larger business impact. I would therefore prioritize Project B, while also looking at whether we can reduce its TTM by breaking the feature into smaller deliverable increments.”
 
 
@@ -29,3 +29,11 @@ You can answer:
 > “I’d manage that risk by defining clear success criteria and limits before starting the pilot. We would agree on a small scope, a fixed timeframe, and measurable targets for deployment time, failure rate, and manual effort. We would review the results regularly, and if the pilot is not meeting the agreed targets, we can pause, adjust, or stop it rather than expanding the investment.
 
 I’d also make sure the team has enough training and support before implementation. The goal isn’t to add another layer of work, but to gradually replace repetitive manual work. This gives us a controlled way to learn from the pilot without putting current project deadlines at risk.”
+
+
+
+Send this:
+
+> “For the pilot, I’d keep the setup to about one to two weeks, depending on the existing tooling and project complexity. We can start with one application and a limited pipeline covering build, automated tests, and deployment to a non-production environment.
+
+I’d set clear milestones for each stage and review progress regularly. The team would continue its normal work while we introduce the pipeline incrementally, so the pilot shouldn’t create a significant productivity drop. At the end of the pilot, we can compare the results against our baseline and decide whether the benefits justify expanding it.”
