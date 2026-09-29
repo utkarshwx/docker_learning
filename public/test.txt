@@ -5,3 +5,6 @@ So, although Project B takes longer to deliver, each month of delay has a much l
 > “I’d also consider the project’s strategic value, customer impact, available resources, and key risks. I’d clearly communicate the €20,000 monthly Cost of Delay and the competitive risk to stakeholders, while explaining that incremental delivery can help manage the longer TTM. I’d also make sure the team has the capacity to deliver it without creating unnecessary risk.”
 
 “Since Project B has a longer TTM, I would break the work into smaller increments and deliver the highest-value parts first. This would reduce the time before customers see value while limiting the cost of delay. I’d also track progress closely and look for ways to shorten the four-month timeline without compromising quality.”
+
+
+“Thank you, Isabelle. I’ll make sure the recommendation is communicated clearly to the stakeholders, with the reasoning based on TTM, COD, customer impact, and risk. I’ll also track the delivery metrics so we can adjust the plan if the business conditions change.”
